@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+numpy
+scipy
+pydantic
+matplotlib
+sounddevice
+
+pytest
+httpx
+ruff
