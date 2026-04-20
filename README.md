@@ -9,50 +9,87 @@ El sistema permite generar señales de excitación, procesar respuestas al impul
 
 ---
 
+## 🎯 Objetivo técnico
+
+Procesar respuestas al impulso (RIR) y calcular parámetros acústicos según la norma ISO 3382.
+
+---
+
 ## 👥 Integrantes
 
--Pellegrino Salvador - Legajo: 75978 - Rol:
--Castrillo Lautaro -  Legajo: 70558 - Rol:
--Maiolo Ivan - Legajo: - Rol:
+- Pellegrino Salvador - Legajo: 75978 - Rol: Backend / API
+- Castrillo Lautaro - Legajo: 70558 - Rol: Procesamiento de señales
+- Maiolo Ivan - Legajo: - Rol: Testing / Documentación
+
+---
+
+## 🛠️ Tecnologías
+
+- FastAPI
+- NumPy
+- SciPy
+- Pydantic
+- Uvicorn
 
 ---
 
 ## ⚙️ Instalación
 
-Clonar el repositorio:
+### Clonar el repositorio
 
 ```bash
 git clone https://github.com/salvipellegrino/SyS_2026.git
 cd SyS_2026
+```
 
-```crear entorno virtual
 
+### Crear entorno virtual
+```bash
 python -m venv venv
 source venv/bin/activate
+```
 
-```instalar dependencias
+
+### Instalar dependencias
+```bash
 pip install -r requirements.txt
+```
 
-ejecutar la api:
+
+### Ejecutar la api:
+```bash
 uvicorn app.main:app --reload
+```
 
 
-Estructura del proyecto
+### 🌐 Acceso a la API
+Una vez ejecutada:
+Documentación interactiva: http://127.0.0.1:8000/docs
+Estado del servidor: http://127.0.0.1:8000/health
+
+
+### Estructura del proyecto
+```bash
 app/
 ├── main.py          # Punto de entrada
 ├── routers/         # Endpoints
 ├── services/        # Lógica (vacío por ahora)
 ├── schemas/         # Validación (vacío por ahora)
+```
 
-Estrategia de ramas
-Main -> rama protegida
-Feature/nombre -> nuevas funcionalidades
 
-Convencion de commits
-feat: nueva funcionalidad
-fix: corrección de errores
+### Estrategia de ramas
+**Main** -> rama protegida
+**Feature/nombre** -> nuevas funcionalidades
+
+
+
+### Convencion de commits
+- **feat**: nueva funcionalidad
+- **fix**: corrección de errores
 
 ---
+
 
 
 
